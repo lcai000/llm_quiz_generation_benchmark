@@ -1,0 +1,305 @@
+gemini-2.5-flash-lite
+30
+10
+{
+  "0": {
+    "QUESTION": "What is the value of x in the equation 3x + 5 = 20? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 6 ",
+      " 5 ",
+      " 4 ",
+      " 7"
+    ]
+  },
+  "1": {
+    "QUESTION": "If 2(y - 4) = 12, what is the value of y? ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 10 ",
+      " 12",
+      " 14 ",
+      " 8 "
+    ]
+  },
+  "2": {
+    "QUESTION": "Solve for w: 4w - 7 = 13 ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 5 ",
+      " 3",
+      " 4 ",
+      " 6 "
+    ]
+  },
+  "3": {
+    "QUESTION": "Find the value of n in the equation 2n + 3n - 5 = 10 ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 3 ",
+      " 5",
+      " 2 ",
+      " 4 "
+    ]
+  },
+  "4": {
+    "QUESTION": "If 5(z + 2) = 35, what is the value of z? ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 6 ",
+      " 4 ",
+      " 5 ",
+      " 7"
+    ]
+  },
+  "5": {
+    "QUESTION": "What is the value of p in the equation 6p - 10 = 20? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 3",
+      " 5 ",
+      " 4 ",
+      " 6 "
+    ]
+  },
+  "6": {
+    "QUESTION": "Solve for k: 3k + 2k + 4 = 24 ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 5 ",
+      " 3 ",
+      " 4 ",
+      " 6"
+    ]
+  },
+  "7": {
+    "QUESTION": "If 4(m - 3) = 16, what is the value of m? ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 6 ",
+      " 8 ",
+      " 9",
+      " 7 "
+    ]
+  },
+  "8": {
+    "QUESTION": "What is the value of t in the equation 7t - 3 = 25? ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 3 ",
+      " 5 ",
+      " 6",
+      " 4 "
+    ]
+  },
+  "9": {
+    "QUESTION": "If 2(x + 5) + 3 = 21, what is the value of x? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 8",
+      " 6 ",
+      " 5 ",
+      " 7 "
+    ]
+  },
+  "10": {
+    "QUESTION": "What is the value of x in the equation 2x + 5 = 15? ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 10 ",
+      " 2",
+      " 7 ",
+      " 5 "
+    ]
+  },
+  "11": {
+    "QUESTION": "Solve for y: 3y - 7 = 11 ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 3",
+      " 6 ",
+      " 4 ",
+      " 18 "
+    ]
+  },
+  "12": {
+    "QUESTION": "If 4a + 9 = 25, what is a? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 34 ",
+      " 4 ",
+      " 2",
+      " 16 "
+    ]
+  },
+  "13": {
+    "QUESTION": "Find the value of b in the equation 5b + 2 = 22 ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 24 ",
+      " 5",
+      " 20 ",
+      " 4 "
+    ]
+  },
+  "14": {
+    "QUESTION": "What is the solution to 6x - 4 = 20? ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 16 ",
+      " 24 ",
+      " 4 ",
+      " 6"
+    ]
+  },
+  "15": {
+    "QUESTION": "If 7m + 3 = 38, what is m? ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 41 ",
+      " 7",
+      " 5 ",
+      " 35 "
+    ]
+  },
+  "16": {
+    "QUESTION": "Solve for p: 2p + 8 = 14 ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 3 ",
+      " 2",
+      " 10 ",
+      " 6 "
+    ]
+  },
+  "17": {
+    "QUESTION": "What is the value of w in the equation 9w - 5 = 40? ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 5 ",
+      " 35 ",
+      " 45 ",
+      " 9"
+    ]
+  },
+  "18": {
+    "QUESTION": "If 4k + 12 = 32, what is k? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 44 ",
+      " 5 ",
+      " 4",
+      " 20 "
+    ]
+  },
+  "19": {
+    "QUESTION": "Find the solution to 8n - 6 = 34 ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 28 ",
+      " 40 ",
+      " 5 ",
+      " 8"
+    ]
+  },
+  "20": {
+    "QUESTION": "What is the value of x in the equation 2x + 5 = 15? ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 7 ",
+      " 5 ",
+      " 10 ",
+      " 20"
+    ]
+  },
+  "21": {
+    "QUESTION": "Solve for y: 3y - 7 = 11 ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 3",
+      " 18 ",
+      " 6 ",
+      " 4 "
+    ]
+  },
+  "22": {
+    "QUESTION": "If 4a + 2 = 18, what is the value of a? ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 2 ",
+      " 20",
+      " 16 ",
+      " 4 "
+    ]
+  },
+  "23": {
+    "QUESTION": "Find the solution to 5m + 3 = 28 ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 6",
+      " 31 ",
+      " 5 ",
+      " 25 "
+    ]
+  },
+  "24": {
+    "QUESTION": "What is the value of b in the equation 7b - 4 = 24? ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 3",
+      " 28 ",
+      " 4 ",
+      " 20 "
+    ]
+  },
+  "25": {
+    "QUESTION": "Solve for c: 6c + 2 = 26 ",
+    "ANSWER": 2,
+    "CHOICES": [
+      " 24",
+      " 32 ",
+      " 4 ",
+      " 28 "
+    ]
+  },
+  "26": {
+    "QUESTION": "If 8d - 5 = 27, what is the value of d? ",
+    "ANSWER": 3,
+    "CHOICES": [
+      " 22 ",
+      " 32 ",
+      " 35",
+      " 4 "
+    ]
+  },
+  "27": {
+    "QUESTION": "Find the solution to 9e + 1 = 46 ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 47 ",
+      " 5 ",
+      " 45 ",
+      " 55"
+    ]
+  },
+  "28": {
+    "QUESTION": "What is the value of f in the equation 10f - 3 = 37? ",
+    "ANSWER": 0,
+    "CHOICES": [
+      " 4 ",
+      " 34 ",
+      " 7",
+      " 40 "
+    ]
+  },
+  "29": {
+    "QUESTION": "Solve for g: 4g + 9 = 29 ",
+    "ANSWER": 1,
+    "CHOICES": [
+      " 20 ",
+      " 5 ",
+      " 4",
+      " 38 "
+    ]
+  }
+}
