@@ -54,6 +54,10 @@ class BenchmarkManager:
         """List all available subjects."""
         return list(self.subjects.keys())
 
+    def get_subject(self, subject: str) -> Optional[BaseBenchmarkGenerator]:
+        """Get a specific subject benchmark generator."""
+        return self.subjects.get(subject.lower())
+
     def list_subject_topics(self, subject: str) -> List[str]:
         """List all topics for a specific subject."""
         generator = self.subjects.get(subject.lower())
