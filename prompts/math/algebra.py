@@ -1,7 +1,7 @@
 """
 Algebra benchmark prompt generator with challenging high school level questions.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,103 @@ class AlgebraBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("Algebra")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def linear_equations(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for linear equations topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for linear equations
+        """
+        return self.generate_benchmark_prompt('linear_equations', question_count, **kwargs)
+
+    def quadratic_equations(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for quadratic equations topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for quadratic equations
+        """
+        return self.generate_benchmark_prompt('quadratic_equations', question_count, **kwargs)
+
+    def systems_of_equations(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for systems of equations topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for systems of equations
+        """
+        return self.generate_benchmark_prompt('systems_of_equations', question_count, **kwargs)
+
+    def polynomials(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for polynomials topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for polynomials
+        """
+        return self.generate_benchmark_prompt('polynomials', question_count, **kwargs)
+
+    def functions(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for functions topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for functions
+        """
+        return self.generate_benchmark_prompt('functions', question_count, **kwargs)
+
+    def exponents_and_radicals(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for exponents and radicals topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for exponents and radicals
+        """
+        return self.generate_benchmark_prompt('exponents_and_radicals', question_count, **kwargs)
+
+    def rational_expressions(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for rational expressions topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for rational expressions
+        """
+        return self.generate_benchmark_prompt('rational_expressions', question_count, **kwargs)
+
+    def inequalities(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for inequalities topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for inequalities
+        """
+        return self.generate_benchmark_prompt('inequalities', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up algebra topic templates."""

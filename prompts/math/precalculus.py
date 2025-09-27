@@ -1,7 +1,7 @@
 """
 Precalculus benchmark prompt generator with challenging advanced mathematics problems.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,115 @@ class PrecalculusBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("Precalculus")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def trigonometric_functions(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for trigonometric functions topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for trigonometric functions
+        """
+        return self.generate_benchmark_prompt('trigonometric_functions', question_count, **kwargs)
+
+    def exponential_and_logarithmic_functions(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for exponential and logarithmic functions topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for exponential and logarithmic functions
+        """
+        return self.generate_benchmark_prompt('exponential_and_logarithmic_functions', question_count, **kwargs)
+
+    def conic_sections(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for conic sections topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for conic sections
+        """
+        return self.generate_benchmark_prompt('conic_sections', question_count, **kwargs)
+
+    def sequences_and_series(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for sequences and series topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for sequences and series
+        """
+        return self.generate_benchmark_prompt('sequences_and_series', question_count, **kwargs)
+
+    def vectors(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for vectors topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for vectors
+        """
+        return self.generate_benchmark_prompt('vectors', question_count, **kwargs)
+
+    def parametric_equations(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for parametric equations topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for parametric equations
+        """
+        return self.generate_benchmark_prompt('parametric_equations', question_count, **kwargs)
+
+    def polar_coordinates(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for polar coordinates topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for polar coordinates
+        """
+        return self.generate_benchmark_prompt('polar_coordinates', question_count, **kwargs)
+
+    def matrices(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for matrices topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for matrices
+        """
+        return self.generate_benchmark_prompt('matrices', question_count, **kwargs)
+
+    def limits(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for limits topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for limits
+        """
+        return self.generate_benchmark_prompt('limits', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up precalculus topic templates."""

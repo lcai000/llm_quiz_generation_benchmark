@@ -1,7 +1,7 @@
 """
 Biology benchmark prompt generator with challenging advanced biology concepts.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,103 @@ class BiologyBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("Biology")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def cell_biology(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for cell biology topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for cell biology
+        """
+        return self.generate_benchmark_prompt('cell_biology', question_count, **kwargs)
+
+    def genetics(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for genetics topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for genetics
+        """
+        return self.generate_benchmark_prompt('genetics', question_count, **kwargs)
+
+    def evolution(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for evolution topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for evolution
+        """
+        return self.generate_benchmark_prompt('evolution', question_count, **kwargs)
+
+    def ecology(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for ecology topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for ecology
+        """
+        return self.generate_benchmark_prompt('ecology', question_count, **kwargs)
+
+    def physiology(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for physiology topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for physiology
+        """
+        return self.generate_benchmark_prompt('physiology', question_count, **kwargs)
+
+    def biochemistry(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for biochemistry topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for biochemistry
+        """
+        return self.generate_benchmark_prompt('biochemistry', question_count, **kwargs)
+
+    def molecular_biology(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for molecular biology topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for molecular biology
+        """
+        return self.generate_benchmark_prompt('molecular_biology', question_count, **kwargs)
+
+    def biotechnology(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for biotechnology topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for biotechnology
+        """
+        return self.generate_benchmark_prompt('biotechnology', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up biology topic templates."""

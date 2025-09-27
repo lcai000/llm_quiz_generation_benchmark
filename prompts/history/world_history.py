@@ -1,7 +1,7 @@
 """
 World History benchmark prompt generator with challenging critical thinking questions.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,127 @@ class WorldHistoryBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("World History")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def ancient_civilizations(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for ancient civilizations topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for ancient civilizations
+        """
+        return self.generate_benchmark_prompt('ancient_civilizations', question_count, **kwargs)
+
+    def classical_period(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for classical period topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for classical period
+        """
+        return self.generate_benchmark_prompt('classical_period', question_count, **kwargs)
+
+    def post_classical_era(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for post-classical era topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for post-classical era
+        """
+        return self.generate_benchmark_prompt('post_classical_era', question_count, **kwargs)
+
+    def renaissance_and_reformation(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for renaissance and reformation topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for renaissance and reformation
+        """
+        return self.generate_benchmark_prompt('renaissance_and_reformation', question_count, **kwargs)
+
+    def age_of_exploration(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for age of exploration topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for age of exploration
+        """
+        return self.generate_benchmark_prompt('age_of_exploration', question_count, **kwargs)
+
+    def absolutism_and_revolution(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for absolutism and revolution topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for absolutism and revolution
+        """
+        return self.generate_benchmark_prompt('absolutism_and_revolution', question_count, **kwargs)
+
+    def industrialization_and_imperialism(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for industrialization and imperialism topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for industrialization and imperialism
+        """
+        return self.generate_benchmark_prompt('industrialization_and_imperialism', question_count, **kwargs)
+
+    def world_wars(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for world wars topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for world wars
+        """
+        return self.generate_benchmark_prompt('world_wars', question_count, **kwargs)
+
+    def cold_war(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for cold war topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for cold war
+        """
+        return self.generate_benchmark_prompt('cold_war', question_count, **kwargs)
+
+    def globalization(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for globalization topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for globalization
+        """
+        return self.generate_benchmark_prompt('globalization', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up world history topic templates."""

@@ -1,7 +1,7 @@
 """
 US History benchmark prompt generator with challenging analytical questions.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,127 @@ class USHistoryBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("US History")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def colonial_era(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for colonial era topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for colonial era
+        """
+        return self.generate_benchmark_prompt('colonial_era', question_count, **kwargs)
+
+    def american_revolution(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for american revolution topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for american revolution
+        """
+        return self.generate_benchmark_prompt('american_revolution', question_count, **kwargs)
+
+    def constitutional_era(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for constitutional era topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for constitutional era
+        """
+        return self.generate_benchmark_prompt('constitutional_era', question_count, **kwargs)
+
+    def civil_war_era(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for civil war era topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for civil war era
+        """
+        return self.generate_benchmark_prompt('civil_war_era', question_count, **kwargs)
+
+    def industrialization(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for industrialization topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for industrialization
+        """
+        return self.generate_benchmark_prompt('industrialization', question_count, **kwargs)
+
+    def progressive_era(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for progressive era topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for progressive era
+        """
+        return self.generate_benchmark_prompt('progressive_era', question_count, **kwargs)
+
+    def world_wars(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for world wars topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for world wars
+        """
+        return self.generate_benchmark_prompt('world_wars', question_count, **kwargs)
+
+    def civil_rights(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for civil rights topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for civil rights
+        """
+        return self.generate_benchmark_prompt('civil_rights', question_count, **kwargs)
+
+    def cold_war(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for cold war topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for cold war
+        """
+        return self.generate_benchmark_prompt('cold_war', question_count, **kwargs)
+
+    def modern_america(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for modern america topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for modern america
+        """
+        return self.generate_benchmark_prompt('modern_america', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up US history topic templates."""

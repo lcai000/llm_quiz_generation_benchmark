@@ -1,7 +1,7 @@
 """
 Java programming benchmark prompt generator with challenging complex problems.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,127 @@ class JavaBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("Java")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def object_oriented_programming(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for object-oriented programming topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for object-oriented programming
+        """
+        return self.generate_benchmark_prompt('object_oriented_programming', question_count, **kwargs)
+
+    def data_structures(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for data structures topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for data structures
+        """
+        return self.generate_benchmark_prompt('data_structures', question_count, **kwargs)
+
+    def algorithms(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for algorithms topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for algorithms
+        """
+        return self.generate_benchmark_prompt('algorithms', question_count, **kwargs)
+
+    def multithreading(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for multithreading topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for multithreading
+        """
+        return self.generate_benchmark_prompt('multithreading', question_count, **kwargs)
+
+    def file_io(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for file I/O topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for file I/O
+        """
+        return self.generate_benchmark_prompt('file_io', question_count, **kwargs)
+
+    def exception_handling(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for exception handling topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for exception handling
+        """
+        return self.generate_benchmark_prompt('exception_handling', question_count, **kwargs)
+
+    def collections_framework(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for collections framework topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for collections framework
+        """
+        return self.generate_benchmark_prompt('collections_framework', question_count, **kwargs)
+
+    def java_8_features(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for Java 8 features topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for Java 8 features
+        """
+        return self.generate_benchmark_prompt('java_8_features', question_count, **kwargs)
+
+    def design_patterns(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for design patterns topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for design patterns
+        """
+        return self.generate_benchmark_prompt('design_patterns', question_count, **kwargs)
+
+    def java_standard_library(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for Java standard library topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for Java standard library
+        """
+        return self.generate_benchmark_prompt('java_standard_library', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up Java programming topic templates."""

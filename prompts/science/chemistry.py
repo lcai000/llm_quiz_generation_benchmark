@@ -1,7 +1,7 @@
 """
 Chemistry benchmark prompt generator with challenging advanced chemistry problems.
 """
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from ..base import BaseBenchmarkGenerator, BenchmarkPrompt
 
 
@@ -11,6 +11,127 @@ class ChemistryBenchmark(BaseBenchmarkGenerator):
     def __init__(self):
         super().__init__("Chemistry")
         self._setup_templates()
+
+    # Topic-specific methods for direct access
+    def atomic_structure(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for atomic structure topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for atomic structure
+        """
+        return self.generate_benchmark_prompt('atomic_structure', question_count, **kwargs)
+
+    def chemical_bonding(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for chemical bonding topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for chemical bonding
+        """
+        return self.generate_benchmark_prompt('chemical_bonding', question_count, **kwargs)
+
+    def chemical_reactions(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for chemical reactions topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for chemical reactions
+        """
+        return self.generate_benchmark_prompt('chemical_reactions', question_count, **kwargs)
+
+    def stoichiometry(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for stoichiometry topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for stoichiometry
+        """
+        return self.generate_benchmark_prompt('stoichiometry', question_count, **kwargs)
+
+    def acids_and_bases(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for acids and bases topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for acids and bases
+        """
+        return self.generate_benchmark_prompt('acids_and_bases', question_count, **kwargs)
+
+    def thermodynamics(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for thermodynamics topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for thermodynamics
+        """
+        return self.generate_benchmark_prompt('thermodynamics', question_count, **kwargs)
+
+    def kinetics_and_equilibrium(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for kinetics and equilibrium topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for kinetics and equilibrium
+        """
+        return self.generate_benchmark_prompt('kinetics_and_equilibrium', question_count, **kwargs)
+
+    def electrochemistry(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for electrochemistry topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for electrochemistry
+        """
+        return self.generate_benchmark_prompt('electrochemistry', question_count, **kwargs)
+
+    def organic_chemistry(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for organic chemistry topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for organic chemistry
+        """
+        return self.generate_benchmark_prompt('organic_chemistry', question_count, **kwargs)
+
+    def nuclear_chemistry(self, question_count: int = 10, **kwargs) -> BenchmarkPrompt:
+        """Generate benchmark prompt for nuclear chemistry topic.
+
+        Args:
+            question_count: Number of questions to generate (default: 10)
+            **kwargs: Additional parameters for template customization
+
+        Returns:
+            BenchmarkPrompt for nuclear chemistry
+        """
+        return self.generate_benchmark_prompt('nuclear_chemistry', question_count, **kwargs)
 
     def _setup_templates(self) -> None:
         """Set up chemistry topic templates."""
